@@ -21,10 +21,7 @@ jobs:
             ~/.cargo/git
           key: cargo-${{ hashFiles('**/Cargo.lock') }}
 
-      - uses: dtolnay/rust-toolchain@master
-        with:
-          toolchain: stable
-          target: x86_64-unknown-linux-gnu
+      - uses: dtolnay/rust-toolchain@stable
 
       - run: cargo build --release
 
@@ -37,7 +34,7 @@ jobs:
         run: |
           mkdir target/stage
           cd target/release
-          tar czvf ../../stage/${{ env.CRATE_NAME }}-${{ steps.extract_tag.outputs.tag }}-x86_64-unknown-linux-gnu.tar.gz ${{ env.CRATE_NAME }}
+          tar czvf ../stage/${{ env.CRATE_NAME }}-${{ steps.extract_tag.outputs.tag }}-x86_64-unknown-linux-gnu.tar.gz ${{ env.CRATE_NAME }}
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ env.CRATE_NAME }}-${{ steps.extract_tag.outputs.tag }}-x86_64-unknown-linux-gnu.tar.gz
