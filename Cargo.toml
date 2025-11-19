@@ -8,4 +8,10 @@ license = "WTFPL"
 categories = ["command-line-utilities"]
 authors = ["Samuel Åkesson <sermuns@lysator.liu.se>"]
 
-[dependencies]
+[profile.release]
+opt-level = 3
+debug = false
+panic = "unwind"
+lto = true
+codegen-units = 1
+strip = true
