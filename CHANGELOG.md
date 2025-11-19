@@ -14,3 +14,4 @@
 
 - Initial commit. by @sermuns in [c72dbe5](https://github.com/sermuns/ank/commit/c72dbe56ece643840d4ee60a90022bc9dc3e7553)
 - create release workflow by @sermuns in [647b73a](https://github.com/sermuns/ank/commit/647b73a49f57aa0b8d93fc7436067ceec68a0976)
+- add license, release, cliff etc.. by Samuel Åkesson in [119632a](https://github.com/sermuns/ank/commit/119632a55c2cee403d5ead301ca3cccb86f40a8a)
