@@ -3,5 +3,9 @@ name = "ank"
 description = "Arch new kernel?"
 version = "1.0.0"
 edition = "2024"
+repository = "https://github.com/sermuns/ank"
+license = "WTFPL"
+categories = ["command-line-utilities"]
+authors = ["Samuel Åkesson <sermuns@lysator.liu.se>"]
 
 [dependencies]
